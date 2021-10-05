@@ -40,14 +40,5 @@ namespace Turtle.Grammar
 
             return null;
         }
-
-        public override object VisitCommandList(LogoParser.CommandListContext context)
-        {
-            foreach (var cmd in context.command())
-            {
-                VisitCommand(cmd);
-            }
-            return null;
-        }
     }
 }
